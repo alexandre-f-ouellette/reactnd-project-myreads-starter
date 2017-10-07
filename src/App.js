@@ -2,7 +2,6 @@ import React from 'react'
 import * as BooksAPI from './BooksAPI'
 import './App.css'
 import BookShelf from './BookShelf'
-import BookShelfChanger from './BookShelfChanger'
 
 class BooksApp extends React.Component {
   state = {
@@ -71,12 +70,12 @@ class BooksApp extends React.Component {
                 <BookShelf
                   shelf="wantToRead"
                   books={ classifiedBooks["wantToRead"] }
-                  title="Currently Reading"
+                  title="Want to Read"
                 />
                 <BookShelf
                   shelf="read"
                   books={ classifiedBooks["read"] }
-                  title="Currently Reading"
+                  title="Read"
                 />
               </div>
             <div className="open-search">
